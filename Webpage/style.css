@@ -1,7 +1,7 @@
 body
     {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background: url(Webpage/Images/background.png) no-repeat;
+        background: url(Images/background.png) no-repeat;
         background-size: cover;
         background-attachment: local;
         min-height: 100vh;
@@ -19,7 +19,7 @@ body
 
 nav
     {
-        background: url(Webpage/Images/footerBackground2.png) no-repeat;
+        background: url(Images/footerBackground2.png) no-repeat;
         height: 80px;
         width: 100%;    
         position: fixed;
@@ -267,7 +267,7 @@ section ul li ul li img
 
 body footer
     {
-        background: url(Webpage/Images/footerBackground2.png) no-repeat;
+        background: url(Images/footerBackground2.png) no-repeat;
         width: 100%;
         height: 160px;
     }

@@ -178,6 +178,7 @@ main section ul li
 
 .Back a
     {
+        z-index: 99 !important;
         float: left;
         margin-top: 0px;
         margin-left: 2%;
@@ -343,8 +344,13 @@ main
 
         section ul li ul li
             {
-                display: inline-block;
-                vertical-align: middle;
+                display: block;
+                margin: auto;
+            }
+
+        section ul li ul li img
+            {
+                max-width: 250px;
             }
     }
 

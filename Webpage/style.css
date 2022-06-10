@@ -19,7 +19,7 @@ body
 
 nav
     {
-        background: url(Images/footerBackground2.png) no-repeat;
+        background-color: navy;
         height: 80px;
         width: 100%;    
         position: fixed;
@@ -268,7 +268,7 @@ section ul li ul li img
 
 body footer
     {
-        background: url(Images/footerBackground2.png) no-repeat;
+        background-color: navy;
         width: 100%;
         height: 160px;
     }

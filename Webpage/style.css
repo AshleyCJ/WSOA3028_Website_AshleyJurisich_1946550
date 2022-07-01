@@ -48,7 +48,7 @@ nav ul li a
 
 .active
     {
-        background-color: aqua;
+        background-color: rgba(165, 252, 255);
         color: black;
         padding: 10px 30px;
         border-radius: 50px;
@@ -183,8 +183,33 @@ main section ul li
         margin-top: 0px;
         margin-left: 2%;
         font-size: 30px;
-        color: black;
+        color: white;
+        background-color: navy;
+        border-radius: 50px;
         position: fixed;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+.BlogList li
+    {
+        font-size: 20px;
+    }
+
+.BlogSelect
+    {
+        justify-content: center;
+        display: flex;
+    }
+
+.BlogSelect li
+    {
+        font-size: 20px;
+        margin: auto;
+        padding: 20px 20px 20px 20px;
+        display: inline-block;
     }
 
 .BlogPreview
@@ -207,6 +232,100 @@ main section ul li
         text-decoration: none;
         color: black;
     }
+
+
+
+
+
+
+
+
+
+
+.BlogListCopy
+    {
+        display: grid;
+        grid-template: repeat(3, 500px) / repeat(3, 30%);
+        justify-items: stretch;
+    }
+
+.BlogListCopy li
+    {
+        font-size: 20px;
+        border: 5px solid navy;
+        border-radius: 25px;
+        margin: 20px;
+    }
+
+.BlogSelectCopy
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.BlogSelectCopy li
+    {
+        border: none;
+        font-size: 20px;
+        margin: auto;
+        padding: 20px 20px 20px 20px;
+        display: inline-block;
+    }
+
+.BlogSelectCopy li h2
+    {
+        font-size: 25px;
+    }
+
+.BlogPreviewCopy
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+.BlogPreviewCopy p
+    {
+        font-size: 20px;
+        max-height: 111px;
+        overflow: hidden;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+.BlogPreviewCopy p a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+.ContReadingCopy
+    {
+        margin-top: 25px;
+        width: 200px;
+        height: 40px;
+        color: white;
+        background-color: navy;
+        border: none;
+        border-radius: 25px;
+        transition-duration: 0.6s;
+    }
+
+.ContReadingCopy:hover
+    {
+        color: navy;
+        background-color: rgba(165, 252, 255);
+        border: 3px solid navy;
+    }
+
+
+
+
+
+
+
+
 
 article
     {

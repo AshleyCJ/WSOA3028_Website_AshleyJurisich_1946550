@@ -193,63 +193,14 @@ main section ul li
         vertical-align: middle;
     }
 
-.BlogList li
-    {
-        font-size: 20px;
-    }
-
-.BlogSelect
-    {
-        justify-content: center;
-        display: flex;
-    }
-
-.BlogSelect li
-    {
-        font-size: 20px;
-        margin: auto;
-        padding: 20px 20px 20px 20px;
-        display: inline-block;
-    }
-
-.BlogPreview
-    {
-        width: 80%;
-        margin: auto;
-    }
-
-.BlogPreview p
-    {
-        font-size: 20px;
-        max-height: 48px;
-        overflow: hidden;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-.BlogPreview p a
-    {
-        text-decoration: none;
-        color: black;
-    }
-
-
-
-
-
-
-
-
-
-
-.BlogListCopy
+.BlogList
     {
         display: grid;
-        grid-template: repeat(3, 500px) / repeat(3, 30%);
+        grid-template: repeat(3, auto) / repeat(3, 33%);
         justify-items: stretch;
     }
 
-.BlogListCopy li
+.BlogList li
     {
         font-size: 20px;
         border: 5px solid navy;
@@ -257,52 +208,55 @@ main section ul li
         margin: 20px;
     }
 
-.BlogSelectCopy
+.BlogSelect
     {
+        min-height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
     }
 
-.BlogSelectCopy li
+.BlogSelect li
     {
         border: none;
         font-size: 20px;
         margin: auto;
-        padding: 20px 20px 20px 20px;
-        display: inline-block;
+        padding: 0px 20px;
     }
 
-.BlogSelectCopy li h2
+.BlogTitlePreview
+    {
+        flex: 1 0 auto;
+    }
+
+.BlogTitlePreview h2
     {
         font-size: 25px;
     }
 
-.BlogPreviewCopy
+.BlogPreview
     {
-        width: 80%;
+        width: 85%;
         margin: auto;
+        flex: 1 0 auto;
     }
 
-.BlogPreviewCopy p
+.BlogPreview p
     {
         font-size: 20px;
-        max-height: 111px;
+        max-height: 116px;
         overflow: hidden;
         margin-top: 0px;
         margin-bottom: 0px;
     }
 
-.BlogPreviewCopy p a
+.ContReading
     {
-        text-decoration: none;
-        color: black;
+        height: 100px;
     }
 
-.ContReadingCopy
+.ContReading button
     {
-        margin-top: 25px;
         width: 200px;
         height: 40px;
         color: white;
@@ -312,20 +266,12 @@ main section ul li
         transition-duration: 0.6s;
     }
 
-.ContReadingCopy:hover
+.ContReading button:hover
     {
         color: navy;
         background-color: rgba(165, 252, 255);
         border: 3px solid navy;
     }
-
-
-
-
-
-
-
-
 
 article
     {

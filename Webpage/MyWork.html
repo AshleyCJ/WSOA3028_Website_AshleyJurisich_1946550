@@ -7,6 +7,7 @@
     <title>My work - Hey, it's Ash!</title>
     <link rel="stylesheet" href="normalize.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/9058c82efb.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -39,9 +40,48 @@
             </p>
         </section>
         <section>
-            <p>
-                No work to show yet. Sorry!
-            </p>
+            <ul class="WorkList">
+                <li>
+                    <ul class="GamePost">
+                        <li class="GameName">
+                            <h2>
+                                Lighting Microbuild
+                            </h2>
+                        </li>
+                        <li class="GameDescription">
+                            <p>
+                                This project was created for an exam, but doesn't form a full game. I decided to experiment with different types of lighting, and record the experience of each player in the context of a horror game.
+                            </p>
+                            <p>
+                                I've included various screenshots and video clips from different parts of this project. Some clips have flickering lights, but there will be a warning before those clips.
+                            </p>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="MyWorkImages/Pictures/Lighting1.png" alt="Screenshot of a corridor in Unity with 5 spotlights spread evenly down it.">
+                                <figcaption>The first corridor in the project.</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <img src="MyWorkImages/Pictures/Lighting2.png" alt="Screenshot of a corridor in Unity with a bright white floor lighting up the rest of the space.">
+                                <figcaption>The second corridor in the project.</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <button id="ButtonClip01" onclick="LoadVideo(this)">Click to see a clip of corridor 3!</button>
+                            <section id="InsertClip01"></section>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="GamePost">
+                        <li>
+                            //
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>

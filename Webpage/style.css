@@ -252,21 +252,22 @@ main section ul li
 
 .ContReading
     {
-        height: 100px;
+        height: 85px;
     }
 
-.ContReading button
+.ContReading a
     {
         width: 200px;
         height: 40px;
         color: white;
         background-color: navy;
-        border: none;
         border-radius: 25px;
+        padding: 8px 14px;
+        text-decoration: none;
         transition-duration: 0.6s;
     }
 
-.ContReading button:hover
+.ContReading a:hover
     {
         color: navy;
         background-color: rgba(165, 252, 255);
@@ -304,6 +305,45 @@ article
     {
         font-size: 20px;
     }
+
+.WorkList
+    {
+        display: grid;
+        grid-template: repeat(3, auto) / repeat(1, 100%);
+        justify-items: stretch;
+    }
+
+.WorkList li
+    {
+        font-size: 20px;
+        border: 5px solid navy;
+        border-radius: 25px;
+        margin: 20px;
+    }
+
+.GamePost
+    {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+.GamePost li
+    {
+        border: none;
+    }
+
+.GamePost li section
+    {
+        background-color: initial;
+        backdrop-filter: none;
+    }
+
+
+
+
+
 
 section ul li
     {
@@ -477,5 +517,26 @@ main
         footer section h2
             {
                 margin-top: 65px;
+            }
+    }
+
+
+
+
+
+
+@media (max-width: 1350px)
+    {
+        .BlogList
+            {
+                grid-template: repeat(5, auto) / repeat(2, 50%);
+            }
+    }
+
+@media (max-width: 900px)
+    {
+        .BlogList
+            {
+                grid-template: repeat(10, auto) / 100%;
             }
     }

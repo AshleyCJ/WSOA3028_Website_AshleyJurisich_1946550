@@ -25,15 +25,15 @@ function VideoReq(ButtonNum)
     {
         var RequestID = ButtonNum.id;
         var VideoNum = parseInt(RequestID.slice(-2));
-        var MustEnd = false;
+        var CheckProceed = false;
         for (let i = 0; i < WarningIndex.length; i++)
         {
             if (VideoNum == WarningIndex[i])
             {
-                MustEnd = true;
+                CheckProceed = true;
             }
         }
-        if (MustEnd)
+        if (CheckProceed)
         {
             WarnUser(ButtonNum, VideoNum);
         }

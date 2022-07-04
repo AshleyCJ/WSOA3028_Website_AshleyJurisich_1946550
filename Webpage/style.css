@@ -311,7 +311,7 @@ article
 .WorkList
     {
         display: grid;
-        grid-template: repeat(3, auto) / repeat(1, 100%);
+        grid-template: repeat(10, auto) / repeat(1, 100%);
         justify-items: stretch;
     }
 
@@ -334,12 +334,24 @@ article
 .GamePost li
     {
         border: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 .GamePost li section
     {
         background-color: initial;
         backdrop-filter: none;
+    }
+
+.GamePost img
+    {
+        max-height: 800px;
+        max-width: 800px;
+        object-fit: contain;
     }
 
 .ButtonClip
@@ -363,12 +375,15 @@ article
 
 #InsertedClip
     {
-        height: 300px;
-        width: 500px;
+        height: 500px;
+        width: 800px;
+        margin-bottom: 50px;
     }
 
-
-
+.BottomBuffer
+    {
+        height: 50px;
+    }
 
 section ul li
     {
@@ -462,6 +477,14 @@ main
         display: none;
     }
 
+@media (max-width: 1350px)
+    {
+        .BlogList
+            {
+                grid-template: repeat(5, auto) / repeat(2, 50%);
+            }
+    }
+
 @media (max-width: 1250px)
     {
         section ul li ul
@@ -481,6 +504,47 @@ main
         section ul li ul li img
             {
                 max-width: 250px;
+            }
+
+        .GamePost img
+            {
+                max-height: 600px;
+                max-width: 600px;
+                object-fit: contain;
+            }
+
+        #InsertedClip
+            {
+                height: 350px;
+                width: 600px;
+                margin-bottom: 50px;
+            }
+
+        .BottomBuffer
+            {
+                height: 75px;
+            }
+
+        .ContReading
+            {
+                height: 130px;
+            }
+    }
+
+@media (max-width: 950px)
+    {
+        .GamePost img
+            {
+                max-height: 400px;
+                max-width: 400px;
+                object-fit: contain;
+            }
+
+        #InsertedClip
+            {
+                height: 250px;
+                width: 400px;
+                margin-bottom: 50px;
             }
     }
 
@@ -532,8 +596,36 @@ main
             }
     }
 
+@media (max-width: 900px)
+    {
+        .BlogList
+            {
+                grid-template: repeat(10, auto) / 100%;
+            }
+    }
+
 @media (max-width: 705px)
     {
+        .GamePost img
+            {
+                max-height: 250px;
+                max-width: 250px;
+                object-fit: contain;
+            }
+
+        .ButtonClip
+            {
+                width: 250px;
+                height: 100px;
+            }
+
+        #InsertedClip
+            {
+                height: 150px;
+                width: 250px;
+                margin-bottom: 50px;
+            }
+
         body footer
             {
                 height: 225px;
@@ -542,26 +634,5 @@ main
         footer section h2
             {
                 margin-top: 65px;
-            }
-    }
-
-
-
-
-
-
-@media (max-width: 1350px)
-    {
-        .BlogList
-            {
-                grid-template: repeat(5, auto) / repeat(2, 50%);
-            }
-    }
-
-@media (max-width: 900px)
-    {
-        .BlogList
-            {
-                grid-template: repeat(10, auto) / 100%;
             }
     }

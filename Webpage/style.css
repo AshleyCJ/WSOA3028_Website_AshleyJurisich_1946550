@@ -304,6 +304,8 @@ article
 .references article p
     {
         font-size: 20px;
+        padding: 10px 10% 10px 10%;
+        text-align: left;
     }
 
 .WorkList
@@ -340,7 +342,30 @@ article
         backdrop-filter: none;
     }
 
+.ButtonClip
+    {
+        width: 350px;
+        height: 80px;
+        color: white;
+        background-color: navy;
+        border-radius: 25px;
+        padding: 8px 14px;
+        text-decoration: none;
+        transition-duration: 0.6s;
+    }
 
+.ButtonClip:hover
+    {
+        color: navy;
+        background-color: rgba(165, 252, 255);
+        border: 3px solid navy;
+    }
+
+#InsertedClip
+    {
+        height: 300px;
+        width: 500px;
+    }
 
 
 

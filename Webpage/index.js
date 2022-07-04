@@ -17,16 +17,50 @@ let VideoName = [
     "Blender animation 2.mp4"
 ]
 
-function LoadVideo(ButtonNum)
+let WarningIndex = [
+    0, 1, 2
+]
+
+function VideoReq(ButtonNum)
     {
         var RequestID = ButtonNum.id;
         var VideoNum = parseInt(RequestID.slice(-2));
+        var MustEnd = false;
+        for (let i = 0; i < WarningIndex.length; i++)
+        {
+            if (VideoNum == WarningIndex[i])
+            {
+                MustEnd = true;
+            }
+        }
+        if (MustEnd)
+        {
+            WarnUser(ButtonNum, VideoNum);
+        }
+        else
+        {
+            LoadVideo(ButtonNum, VideoNum);
+        }
+    }
+
+function WarnUser(ButtonNum, VideoNum)
+    {
+        var Accept = window.confirm("Warning! Flashing/flickering lights are shown in this clip. Are you sure you wish to proceed?");
+        if (Accept) {
+            LoadVideo(ButtonNum, VideoNum);
+        }
+        else 
+        {
+            return;
+        }
+    }
+
+function LoadVideo(ButtonNum, VideoNum)
+    {
         var VideoPath = "MyWorkImages/Videos/" + VideoName[VideoNum - 1];
         var NewVideo = document.createElement('video');
         NewVideo.src = VideoPath;
         NewVideo.controls = true;
-        //NewVideo.height = 500;
-        //NewVideo.width = 1000;
         var InsertID = "InsertedClip";
         if (document.contains(document.getElementById(InsertID)))
         {
